@@ -7,6 +7,7 @@
   --hero-fon-color: #2f303a;
   --additional-fon-color: #f5f4fa;
   --footer-text-color: rgba(255, 255, 255, 0.6);
+  --hero-button-active: #188CE8;
 }
 
 body {
@@ -100,6 +101,13 @@ a {
   cursor: pointer;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-button-active);
+
+}
+
+
 /* features */
 .feature-list {
   line-height: 1.71;
@@ -164,6 +172,11 @@ h3 {
 
 .footer .address-map {
   color: var(--accent-text-color);
+}
+
+.footer .address-map:hover,
+.footer .address-map:focus {
+    color: var(--additional-text-color);
 }
 
 .footer .link {
